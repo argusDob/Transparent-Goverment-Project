@@ -369,3 +369,7 @@ background-color: ;
 	display: none;
 	
 }
+
+.flex_load {
+	display: flex;
+}
