@@ -1,0 +1,371 @@
+
+*{
+	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+       font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.body{
+	
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.row{
+	
+	max-width: 1140px;
+	margin: 0 auto;
+	
+}
+
+
+.header {
+	background-color:;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+
+
+
+.nav {
+	
+	display: flex;
+	background-color:lightgray;
+	
+	
+}
+
+.navbar row{
+    overflow: hidden;
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+	margin-right: 100px;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+
+}
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+
+}
+
+.header a:hover, .dropdown:hover .dropbtn {
+    background-color:grey;
+}
+
+.dropdown-content {
+    display:none;
+    position: absolute;
+    background-color: lightgray;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	overflow: hidden;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.text {
+	background-color:;
+	margin-right: 0%;
+    margin-top: 20px;
+    text-align: left;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+
+}
+
+.checkbox-inline {
+	display: inline-flex;
+	
+	
+	
+}
+
+.filters {
+	background-color: ;
+	margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+	color: black;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+
+}
+
+
+
+#table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#table td, #table th {
+    border: 1px solid darkgray;
+    padding: 8px;
+}
+
+
+#table tr:nth-child(even){background-color: #f2f2f2;}
+
+#table tr:hover {background-color: #ddd;}
+
+#table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: darkgray;
+    color: white;
+	
+	
+}
+
+#statistics {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+}
+
+
+#statistics td, #statistics th {
+    border: 1px solid #ddd;
+    padding-left: 70px;
+    padding-right: 20px;
+    padding-top: 12px;
+    text-align: left;
+}
+
+
+#statistics tr:nth-child(even){background-color: #f2f2f2;}
+
+#statistics th {
+    padding-top: 12px;
+    padding-bottom: 5px;
+    text-align: left;
+    background-color: darkgray;
+    color: white;
+	
+	
+}
+
+.footer {
+	background-color: grey;
+	margin-top: 15%;
+	text-align: center;
+	align-items: center;
+	font-size: 200%
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    height: 30px;
+}
+
+.content {
+	
+	display: flex;
+	
+}
+
+.wrap {
+	
+background-color: ;
+
+
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+.main_content {
+	margin-top: 5%;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+
+	
+}
+
+#content_hou {
+    background-color:green;
+    
+    
+}
+
+.s_content {
+    margin-right: 5%
+}
+
+.content_hou {
+    margin-top: 3%;
+    display: flex;
+    
+}
+
+#statistics {
+   justify-content: center;
+}
+
+.all_tables {
+	display: flex;
+	margin-top:10%;
+}
+
+.statistics {
+	margin-left:30%;
+}
+
+.table_2 {
+	margin-left: 20%;
+}
+
+#titles {
+	font-size: 20px;
+}
+
+.home {
+	font-size: 20px;
+}
+
+.message {
+	margin-right: 15%;
+    font-weight: bold;
+	margin-bottom:10%;
+	
+}
+
+.button {
+    background-color: dimgray; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+#test {
+	display: none;
+	
+}
