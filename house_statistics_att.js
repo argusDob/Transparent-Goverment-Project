@@ -1,5 +1,5 @@
 const stat = Object.keys(statistics).map(i => statistics[i]);
-
+//fetch the data
 function getData() {
 	var fetchConfig =
 		fetch("https://api.propublica.org/congress/v1/115/senate/members.json", {
@@ -17,7 +17,7 @@ function getData() {
 			removeUndefined(members);
 			removeUndefinedMised(members);
 			deleteNull(members);
-
+               console.log(members);
 			statistics =
 
 				{
@@ -38,21 +38,10 @@ function getData() {
 			//engage values
 			mono = sortArrayToTop("missed_votes_pct");
 			bottom = sortArrayToBottom("missed_votes_pct");
-			
-
 			createTable();
-
-			//const stat = Object.keys(statistics).map(i => statistics[i]);
-
-			trigTables();
-
-		
-
-
-
-
-
-		})
+//const stat = Object.keys(statistics).map(i => statistics[i]);
+trigTables();
+})
 		.catch(function (error) {
 			console.log(error);
 		})
@@ -60,7 +49,7 @@ function getData() {
 
 getData();
 
-
+//calculate array length for each party
 function calcLengthAndStore(party) {
     var array = [];
 	for (var i = 0; i < members.length; i++) {
@@ -83,6 +72,7 @@ function removeUndefined(array) {
 }
 
 
+//method to replace null with zero
 
 function removeUndefinedMised(array) {
 	for (var i = 0; i < array.length; i++) {
@@ -152,29 +142,19 @@ function sortArrayToTop(sortKey) {
 
 }
 
-
+// show hide loader
 function showPage() {
 document.getElementById("loader").style.display = "none";
 document.getElementById("test").style.display = "block";
 		}
 
 
-//function myFunction() {
-//myVar = setTimeout(showPage, 10000);
-//		}
-		
-
-
-//const stat = Object.keys(statistics).map(i => statistics[i]);
-
 function createTable() {
 
 
 	var k = '<tbody>'
 	for (var i = 0; i < 1; i++) { //if middle name is null hide it
-
-
-		k += '<tr>';
+        k += '<tr>';
 		k += '<td>' + "Democrats" + '</td>';
 		k += '<td>' + statistics["numbOfDem"] + '</td>';
 		k += '<td>' + statistics["DemPerc"].toFixed(2) + '</td>';
@@ -191,8 +171,7 @@ function createTable() {
 		k += '<td>' +  statistics["Indperc"].toFixed(2) + '</td>';
 		k += '</tr>';
 
-
-	}
+}
 
 	k += '</tbody>';
 	document.getElementById("tableData").innerHTML = k;
@@ -200,8 +179,6 @@ function createTable() {
 
 
 }
-
-
 function create_second_Table(array, table) {
 	var k = '<tbody>'
 	for (var i = 0; i < array.length; i++) {
@@ -215,9 +192,6 @@ function create_second_Table(array, table) {
 
 	k += '</tbody>';
 	document.getElementById(table).innerHTML = k;
-
-
-
 }
 
 function LoyaltTables(array, table) {

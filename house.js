@@ -47,19 +47,15 @@ function createTable(array) {
 			k += '<td>' + array[i].state + '</td>';
 			k += '<td>' + array[i].seniority + '</td>';
 			k += '<td>' + array[i].votes_with_party_pct + '</td>';
-
 			k += '</tr>';
 		} else { //else if middle name has value show it on the table
-
 			k += '<tr>';
 			k += '<td>' + array[i].first_name + " " + array[i].middle_name + array[i].last_name + '</td>';
 			k += '<td>' + array[i].party + '</td>';
 			k += '<td>' + array[i].state + '</td>';
 			k += '<td>' + array[i].seniority + '</td>';
 			k += '<td>' + array[i].votes_with_party_pct + '</td>';
-
 			k += '</tr>';
-
 		}
 	}
 	k += '</tbody>';
@@ -71,15 +67,11 @@ function createTable(array) {
 
 
 function addFilters() {
-
 	var newArray = [];
-
 	for (var i = 0; i < members.length; i++) {
-
 		if (select.value == members[i].state || select.value == "ALL") {
 			if (p.checked == true && members[i].party === "D") {
 				newArray.push(members[i]);
-
 			}
 			if (r.checked == true && members[i].party === "R") {
 
@@ -88,19 +80,13 @@ function addFilters() {
 			if (ind.checked == true && members[i].party === "I") {
 
 				newArray.push(members[i]);
-
 			}
-
-
 		}
 	}
-
 	createTable(newArray);
 }
 
 //call two methods emppeded
-
-
 function getCities(filteredMembers) {
 	filteredMembers.forEach(function (arr) {
 		var opt = arr;
@@ -112,21 +98,16 @@ function getCities(filteredMembers) {
 	})
 }
 
-
+//remove dublicates for each state
 function removeDuplicates(arr) {
 
 	var unique_array = [];
 	var tempArr = [];
-
 	arr.forEach(function (item) {
 		if (tempArr.indexOf(item.state) == -1) {
 			unique_array.push(item);
 			tempArr.push(item.state);
 		}
-
-
 	});
 	return unique_array;
 }
-
-

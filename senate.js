@@ -6,9 +6,6 @@ var app = new Vue({ //Vue Object
 		members: [],
 		filteredArray: [],
 		states: [],
-
-
-
 	},
 	created: function () {
 		this.getData();
@@ -26,27 +23,16 @@ var app = new Vue({ //Vue Object
 
 				if (select.value == app.members[i].state || select.value == "ALL") {
 					if (d.checked == true && app.members[i].party == "D") {
-
 						app.filteredArray.push(app.members[i]);
-
 					}
-
 					if (r.checked == true && app.members[i].party == "R") {
-
 						app.filteredArray.push(app.members[i]);
-
 					}
-
 					if (indip.checked == true && app.members[i].party == "I") {
-
 						app.filteredArray.push(app.members[i]);
-
 					}
-
 				}
-
 			}
-
 		},
 		removeDuplicates: function (array) {
 			var unique_array = [];
@@ -87,7 +73,6 @@ var app = new Vue({ //Vue Object
 
 
 function deleteUn() {
-
 	for (var i = 0; i < app.members.length; i++) {
 		if (app.members[i].middle_name === undefined) {
 			app.members[i].middle_name = "";
