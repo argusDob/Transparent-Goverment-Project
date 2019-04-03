@@ -1,5 +1,6 @@
 
 //Read more function
+//accordion feature
 
 function myFunction() {
   var dots = document.getElementById("dots");
