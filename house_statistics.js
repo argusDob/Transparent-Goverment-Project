@@ -38,7 +38,6 @@ function removeUndefined() {
 
 //get the sum of the votes per party
 function calculateAverageVotes(party) {
-
 	var sum = 0;
 	for (var i = 0; i < members.length; i++) {
 		if (members[i].party === party) {
